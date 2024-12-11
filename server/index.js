@@ -18,3 +18,6 @@ mongoose
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
 app.listen(5000, () => console.log("Server running on port 5000"));
+
+const userRoutes = require("./routes/userRoutes");
+app.use("/api/users", userRoutes);
