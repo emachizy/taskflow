@@ -2,7 +2,8 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Login from "./Login";
 import { Provider } from "react-redux";
-import store from "../store";
+import store from "../store/store";
+import "@testing-library/jest-dom";
 
 test("Login button should be clickable", () => {
   render(
